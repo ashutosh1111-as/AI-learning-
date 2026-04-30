@@ -18,16 +18,13 @@ function App() {
         </div>
         <div>
           <h1>Get set go</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
         </div>
         <button
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 2)}
         >
-          Count is {count}
+          Count is {count} {count %2 ===0 ? 'Θ': 'Ω'}
         </button>
       </section>
 
